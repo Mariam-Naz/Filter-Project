@@ -49,7 +49,7 @@ button:hover{
     flex-wrap: wrap;
 
 }
-img{
+.cake-img img{
     width: 200px;
     height: 200px;
     margin: 2%;
@@ -59,12 +59,66 @@ img{
     transition-duration:0.4s ;
     transition-property: initial;
 }
-img:hover{
+.biscuit-img img{
+    width: 200px;
+    height: 200px;
+    margin: 2%;
+    border-radius: 50%;
+    box-shadow: 3px 5px 2px rgba(0,0,0,0.8);
+    border: 10px solid burlywood;
+    transition-duration:0.4s ;
+    transition-property: initial;
+}
+.icecream-img img{
+    width: 200px;
+    height: 200px;
+    margin: 2%;
+    border-radius: 50%;
+    box-shadow: 3px 5px 2px rgba(0,0,0,0.8);
+    border: 10px solid burlywood;
+    transition-duration:0.4s ;
+    transition-property: initial;
+}
+.cake-img img:hover{
     transform: scale(1.1);
 
 }
+.biscuit-img img:hover{
+    transform: scale(1.1);
 
+}
+.icecream-img img:hover{
+    transform: scale(1.1);
+
+}
 .hide{
     visibility: hidden;
 }
-
+.model-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+.pop-hide{
+    display: none;
+}
+.pop{
+    position: absolute;
+    width: 60rem;
+    height: 25rem;
+    z-index: 1;
+    box-shadow: 3px 2px 100px rgba(0,0,0, 0.8);
+    border: 2px solid rgba(228, 223, 217, 0.233);
+}
+.model-img button{
+    margin-right: 10px;
+    position: absolute;
+    z-index: 2;
+}
+.hide-scroll{
+    overflow: hidden;
+}
+.dark{
+    filter: brightness(70%);
+}

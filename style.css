@@ -99,6 +99,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     padding-top: 10%;
+    flex-direction: column;
 }
 .pop-hide{
     display: none;
@@ -111,10 +112,32 @@ button:hover{
     box-shadow: 3px 2px 100px rgba(0,0,0, 0.8);
     border: 2px solid rgba(228, 223, 217, 0.233);
 }
-.model-img button{
+.model-img .right-btn{
     margin-right: 10px;
     position: absolute;
     z-index: 2;
+    align-self: flex-start;
+    margin-left: 15%;
+}
+.model-img .left-btn{
+    margin-right: 10px;
+    position: absolute;
+    z-index: 2;
+    align-self: flex-end;
+    margin-left: -15%;
+}
+.model-img .close-btn{
+    margin-right: 10px;
+    position: absolute;
+    z-index: 2;
+    align-self: flex-end;
+    margin-left: -12%;
+    margin-top: -15.8%;
+    background-color: rgba(255, 255, 240, 0.39);
+    border-radius: 200%;
+}
+.model-img .close-btn:hover{
+    background-color: rgba(255, 0, 0, 0.664);
 }
 .hide-scroll{
     overflow: hidden;
